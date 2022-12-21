@@ -21,5 +21,13 @@ def import_cont():
            
 # import_cont()           
 
+def contacts_search():
+ name = input('Введите имя или номер телефона или часть номера контакта: ')
+ with open (r'tel1.txt', encoding ='utf-8') as f:
+      for line in f:
+         if name in str(line):
+            print(line)
+
+# contacts_search()
 
 
